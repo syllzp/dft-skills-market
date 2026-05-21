@@ -1,0 +1,23 @@
+title: DFT Skills Market
+description: 面向 DFT 计算的可移植 AI 技能市场（ORCA / VASP / QE / Gaussian / CP2K）
+theme: just-the-docs
+url: https://syllzp.github.io
+baseurl: /dft-skills-market
+remote_theme: just-the-docs/just-the-docs
+plugins:
+  - jekyll-remote-theme
+
+# 导航栏链接
+aux_links:
+  GitHub: https://github.com/syllzp/dft-skills-market
+
+# 搜索
+search_enabled: true
+search:
+  heading_level: 3
+
+# 颜色方案
+color_scheme: light
+
+# 页脚
+footer_content: 'DFT Skills Market &copy; 2026 SYL. MIT License.'
