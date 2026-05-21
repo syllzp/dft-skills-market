@@ -1,0 +1,39 @@
+                          -----------------------------
+                          ORCA 5.0.4 RELEASE (20220822)
+                          -----------------------------
+
+         wB97X-D Density Functional with D3(BJ) dispersion
+         ...
+
+   Basis Set Information
+   ---------------------
+   def2-TZVPD -- includes diffuse functions
+   Auxiliary Basis Sets for RI-JK: automatically chosen
+
+   Total number of electrons: 32
+   Charge: -1, Multiplicity: 1 (Singlet, RKS)
+
+   SCF ITERATION CONVERGED
+   ...
+
+   GEOMETRY OPTIMIZATION CYCLE
+   ---------------------------
+
+   Cycle    Energy (Eh)        dE          RMS Grad   RMS Disp
+   -------------------------------------------------------------
+      1    -228.4567890123   0.0000000    0.0189012   0.14567
+      2    -228.4678901234  -0.0111011    0.0123456   0.10234
+      ...
+      7    -228.4890123456  -0.0003456    0.0002345   0.00456
+      8    -228.4891234567  -0.0001111    0.0000678   0.00123
+
+   *** OPTIMIZATION CONVERGED ***
+
+   FINAL ENERGY:   -228.4891234567 Eh
+   FINAL GRADIENT:  6.78e-05 (RMS)   Max: 9.12e-05
+
+   FINAL CARTESIAN COORDINATES (ANGSTROEM)
+   ----------------------------------------
+   C     0.00000    0.00000    0.00000
+   O     1.24500    0.00000    0.00000
+   ...

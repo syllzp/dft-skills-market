@@ -1,0 +1,27 @@
+# Geometry optimization of benzene at B3LYP-D3(BJ)/def2-TZVP level
+# ORCA 5+ input file -- generated for academic use
+# Neutral, closed-shell organic molecule
+
+! B3LYP D3BJ def2-TZVP Opt TightOpt RIJCOSX DefGrid2 TightSCF
+
+%maxcore 4000
+
+%geom
+  Calc_Hess true
+  Recalc_Hess 5
+end
+
+* xyz 0 1
+ C    0.000000    1.402700    0.000000
+ C    1.214700    0.701350    0.000000
+ C    1.214700   -0.701350    0.000000
+ C    0.000000   -1.402700    0.000000
+ C   -1.214700   -0.701350    0.000000
+ C   -1.214700    0.701350    0.000000
+ H    0.000000    2.494700    0.000000
+ H    2.154400    1.247350    0.000000
+ H    2.154400   -1.247350    0.000000
+ H    0.000000   -2.494700    0.000000
+ H   -2.154400   -1.247350    0.000000
+ H   -2.154400    1.247350    0.000000
+*

@@ -1,0 +1,39 @@
+# Geometry optimization of [Fe(H2O)6]2+ at PBE0-D3(BJ)/def2-TZVP level
+# Transition metal complex -- quintet spin state (d6 high-spin Fe2+)
+# ORCA 5+ input file -- generated for academic use
+
+! PBE0 D3BJ def2-TZVP Opt TightOpt RIJCOSX DefGrid2 TightSCF
+
+%maxcore 4000
+
+%scf
+  MaxIter 500
+  Convergence Tight
+end
+
+%geom
+  Calc_Hess true
+  Recalc_Hess 3
+end
+
+* xyz 2 5
+ Fe    0.000000    0.000000    0.000000
+ O     2.060000    0.000000    0.000000
+ O    -2.060000    0.000000    0.000000
+ O     0.000000    2.060000    0.000000
+ O     0.000000   -2.060000    0.000000
+ O     0.000000    0.000000    2.060000
+ O     0.000000    0.000000   -2.060000
+ H     2.590000    0.760000    0.000000
+ H     2.590000   -0.760000    0.000000
+ H    -2.590000    0.760000    0.000000
+ H    -2.590000   -0.760000    0.000000
+ H     0.760000    2.590000    0.000000
+ H    -0.760000    2.590000    0.000000
+ H     0.760000   -2.590000    0.000000
+ H    -0.760000   -2.590000    0.000000
+ H     0.760000    0.000000    2.590000
+ H    -0.760000    0.000000    2.590000
+ H     0.760000    0.000000   -2.590000
+ H    -0.760000    0.000000   -2.590000
+*

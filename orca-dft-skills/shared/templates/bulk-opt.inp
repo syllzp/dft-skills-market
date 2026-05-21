@@ -1,0 +1,17 @@
+# Preliminary geometry optimization of <MOLECULE_NAME> at <FUNCTIONAL>-D3(BJ)/<BASIS> level
+# Fast pre-optimization template (follow with higher-level refinement)
+# ORCA 5+ input file -- generated for academic use
+# Uses GGA + RIJ for speed; re-optimize with hybrid/TZVP for production
+
+! <FUNCTIONAL> D3BJ <BASIS> Opt RIJ DefGrid2 TightSCF
+
+%maxcore <MEMORY_MB>
+
+%geom
+  Calc_Hess true
+  Recalc_Hess 10
+end
+
+* xyz <CHARGE> <MULTIPLICITY>
+<COORDINATES>
+*

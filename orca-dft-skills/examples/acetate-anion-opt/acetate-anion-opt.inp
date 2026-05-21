@@ -1,0 +1,22 @@
+# Geometry optimization of acetate anion at wB97X-D3(BJ)/def2-TZVPD level
+# Anionic species -- diffuse functions and fine grid included
+# ORCA 5+ input file -- generated for academic use
+
+! wB97X-D D3BJ def2-TZVPD Opt TightOpt RIJCOSX DefGrid3 TightSCF
+
+%maxcore 4000
+
+%geom
+  Calc_Hess true
+  Recalc_Hess 5
+end
+
+* xyz -1 1
+ C   -0.000000    0.000000    0.000000
+ O    1.210000    0.000000    0.000000
+ O   -1.210000    0.000000    0.000000
+ C   -0.680000    1.200000    0.000000
+ H   -1.750000    1.200000    0.000000
+ H   -0.350000    2.150000    0.000000
+ H   -0.350000    1.200000   -0.950000
+*

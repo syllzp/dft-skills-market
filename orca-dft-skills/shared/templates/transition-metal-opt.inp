@@ -1,0 +1,21 @@
+# Geometry optimization of <MOLECULE_NAME> at <FUNCTIONAL>-D3(BJ)/<BASIS> level
+# Transition metal complex -- tighter SCF and more frequent Hessian updates
+# ORCA 5+ input file -- generated for academic use
+
+! <FUNCTIONAL> D3BJ <BASIS> Opt TightOpt RIJCOSX DefGrid2 TightSCF
+
+%maxcore <MEMORY_MB>
+
+%scf
+  MaxIter 500
+  Convergence Tight
+end
+
+%geom
+  Calc_Hess true
+  Recalc_Hess 3
+end
+
+* xyz <CHARGE> <MULTIPLICITY>
+<COORDINATES>
+*

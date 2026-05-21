@@ -1,0 +1,39 @@
+                          -----------------------------
+                          ORCA 5.0.4 RELEASE (20220822)
+                          -----------------------------
+
+         PBE0 Density Functional
+         ...
+
+   Basis Set Information
+   ---------------------
+   Auxiliary Basis Sets for RI-JK: automatically chosen
+
+   Total number of electrons: 68
+   Charge: +2, Multiplicity: 5 (Quintet, UKS)
+
+   SCF ITERATION CONVERGED (Unrestricted)
+   <S^2>  = 8.003  (expected: 8.000)
+   ...
+
+   GEOMETRY OPTIMIZATION CYCLE
+   ---------------------------
+
+   Cycle    Energy (Eh)        dE          RMS Grad   RMS Disp
+   -------------------------------------------------------------
+      1   -1345.6789012345   0.0000000    0.0234567   0.15678
+      2   -1345.6912345678  -0.0123333    0.0156789   0.12345
+      ...
+      8   -1345.7234567890  -0.0004567    0.0001234   0.00234
+      9   -1345.7235678901  -0.0001111    0.0000456   0.00067
+
+   *** OPTIMIZATION CONVERGED ***
+
+   FINAL ENERGY:   -1345.7235678901 Eh
+   FINAL GRADIENT:  4.56e-05 (RMS)   Max: 8.90e-05
+
+   FINAL CARTESIAN COORDINATES (ANGSTROEM)
+   ----------------------------------------
+   Fe     0.00000    0.00000    0.00000
+   O      2.04500    0.00000    0.00000
+   ...

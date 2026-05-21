@@ -1,0 +1,17 @@
+# Geometry optimization of <MOLECULE_NAME> (charge=<CHARGE>, mult=<MULTIPLICITY>)
+# Anion/cation -- diffuse functions and fine grid included
+# ORCA 5+ input file -- generated for academic use
+# Recommended basis: def2-TZVPD or def2-SVPD (diffuse functions essential)
+
+! <FUNCTIONAL> D3BJ <BASIS> Opt TightOpt RIJCOSX DefGrid3 TightSCF
+
+%maxcore <MEMORY_MB>
+
+%geom
+  Calc_Hess true
+  Recalc_Hess 5
+end
+
+* xyz <CHARGE> <MULTIPLICITY>
+<COORDINATES>
+*
