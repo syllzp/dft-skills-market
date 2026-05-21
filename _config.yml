@@ -3,9 +3,6 @@ description: 面向 DFT 计算的可移植 AI 技能市场（ORCA / VASP / QE / 
 theme: just-the-docs
 url: https://syllzp.github.io
 baseurl: /dft-skills-market
-remote_theme: just-the-docs/just-the-docs
-plugins:
-  - jekyll-remote-theme
 
 # 导航栏链接
 aux_links:
