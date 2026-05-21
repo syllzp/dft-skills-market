@@ -2,6 +2,7 @@
 title: 首页
 layout: home
 nav_order: 1
+has_children: true
 ---
 
 # DFT Skills Market
@@ -24,9 +25,3 @@ nav_order: 1
 | Quantum Espresso | 开发中 | 开发中 | 开发中 |
 | Gaussian | 开发中 | 开发中 | 开发中 |
 | CP2K | 开发中 | 开发中 | 开发中 |
-
-## 快速开始
-
-1. 浏览 **[快速上手](docs/getting-started.md)** 了解如何使用本项目的技能
-2. 查看 **[ORCA 文档](docs/orca/)** 了解几何优化输入生成
-3. 阅读 **[架构说明](docs/architecture.md)** 了解项目结构与开发规范
