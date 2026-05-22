@@ -1,0 +1,106 @@
+                                 Gaussian 16:  ES64L-G16RevC.01  Sep 2021
+                                 =============================
+         PBE0/def2-TZVP Opt=Tight scf=(xqc,tight) int=ultrafine empiricaldispersion=gd3bj
+         ---------------------------------------------------------------------------------
+
+         Symbolic Z-matrix:
+         Charge =  0   Multiplicity = 1
+         Cr,0.,0.,0.
+         C,0.,0.,1.912
+         O,0.,0.,3.06
+         ...
+
+                          Molecular Point Group: Oh
+                          Full point group: Oh
+
+                          Estimated thermochemistry (GHz):
+                          Rotational constants:   1.210    1.210    1.210
+
+         SCF Done:  E(RPBE1PBE) =  -1657.3456789012     A.U. after  18 cycles
+         Convg  =    0.1284D-10     -V/T =  2.0056
+         <S**2> =   0.0000
+
+                           ----------------------------
+                           GEOMETRY OPTIMIZATION CYCLE 1
+                           ----------------------------
+
+         Item               Value     Threshold  Converged?
+         Maximum Force       0.003842  0.000015     NO
+         RMS     Force       0.001567  0.000010     NO
+         Maximum Displacement 0.015632  0.000060     NO
+         RMS     Displacement 0.007891  0.000040     NO
+
+         SCF Done:  E(RPBE1PBE) =  -1657.3456789012     A.U. after  15 cycles
+
+                           ----------------------------
+                           GEOMETRY OPTIMIZATION CYCLE 2
+                           ----------------------------
+
+         Item               Value     Threshold  Converged?
+         Maximum Force       0.000892  0.000015     NO
+         RMS     Force       0.000345  0.000010     NO
+         Maximum Displacement 0.004521  0.000060     NO
+         RMS     Displacement 0.002103  0.000040     NO
+
+                           ----------------------------
+                           GEOMETRY OPTIMIZATION CYCLE 3
+                           ----------------------------
+
+         Item               Value     Threshold  Converged?
+         Maximum Force       0.000156  0.000015     NO
+         RMS     Force       0.000067  0.000010     NO
+         Maximum Displacement 0.001245  0.000060     NO
+         RMS     Displacement 0.000712  0.000040     NO
+
+                           ----------------------------
+                           GEOMETRY OPTIMIZATION CYCLE 4
+                           ----------------------------
+
+         Item               Value     Threshold  Converged?
+         Maximum Force       0.000034  0.000015     NO
+         RMS     Force       0.000015  0.000010     NO
+         Maximum Displacement 0.000298  0.000060     NO
+         RMS     Displacement 0.000156  0.000040     NO
+
+                           ----------------------------
+                           GEOMETRY OPTIMIZATION CYCLE 5
+                           ----------------------------
+
+         Item               Value     Threshold  Converged?
+         Maximum Force       0.000007  0.000015     YES
+         RMS     Force       0.000003  0.000010     YES
+         Maximum Displacement 0.000089  0.000060     NO
+         RMS     Displacement 0.000045  0.000040     NO
+
+                           ----------------------------
+                           GEOMETRY OPTIMIZATION CYCLE 6
+                           ----------------------------
+
+         Item               Value     Threshold  Converged?
+         Maximum Force       0.000001  0.000015     YES
+         RMS     Force       0.000001  0.000010     YES
+         Maximum Displacement 0.000014  0.000060     YES
+         RMS     Displacement 0.000008  0.000040     YES
+
+         Optimization completed.
+            -- Stationary point found.
+
+                           ----------------------------
+                           OPTIMIZED GEOMETRY (Angstroms)
+                           ----------------------------
+
+         Cr             0.000000      0.000000      0.000000
+         C              0.000000      0.000000      1.907000
+         O              0.000000      0.000000      3.051000
+         C              0.000000      0.000000     -1.907000
+         O              0.000000      0.000000     -3.051000
+         C              0.000000      1.907000      0.000000
+         O              0.000000      3.051000      0.000000
+         C              0.000000     -1.907000      0.000000
+         O              0.000000     -3.051000      0.000000
+         C              1.907000      0.000000      0.000000
+         O              3.051000      0.000000      0.000000
+         C             -1.907000      0.000000      0.000000
+         O             -3.051000      0.000000      0.000000
+
+         Job completed successfully.

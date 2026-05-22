@@ -1,0 +1,108 @@
+                             ------------------------------------------------------------------
+                                PWSCF        v.7.2 (release)
+                             ------------------------------------------------------------------
+
+              Parallel version (MPI), running on     4 processors
+
+              ... MPI processes distributed on 1 nodes ...
+
+     Program PWSCF v.7.2 starts on 22 May 2026 at 10:15:30
+
+     Reading input from water.in
+
+     ------------------------------------------------------------------
+
+     Crystal axes: (cart. coord. in a.u.)
+       a(1) = (   1.889726  0.000000  0.000000 )
+       a(2) = (   0.000000  1.889726  0.000000 )
+       a(3) = (   0.000000  0.000000  1.889726 )
+
+     ...
+
+     Cartesian axes
+
+     site n.     atom                  positions (a.u.)
+         1           O  tau(1) = (   0.000000  0.000000  0.221074 )
+         2           H  tau(2) = (   1.430541  0.000000 -0.886308 )
+         3           H  tau(3) = (  -1.430541  0.000000 -0.886308 )
+
+     number of k points=     1  (gamma point)
+
+     ...
+
+     Starting wfc are  1 atomic +      1 random wfc
+
+     ...
+
+     iteration # 1     ecut=    40.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr = 1.00E-06,  avg. number of iterations:  1.0
+
+     ...
+
+          total energy              =     -17.18432706 Ry
+          estimated scf accuracy    =       0.00000094 Ry
+
+          total energy              =     -17.18432804 Ry
+          estimated scf accuracy    =       0.00000051 Ry
+
+          total energy              =     -17.18432841 Ry
+          estimated scf accuracy    =       0.00000023 Ry
+
+     ...
+
+     ------------------------------------------------------------------
+     Relaxation step #   1
+     ------------------------------------------------------------------
+
+     Forces acting on atoms (Ry/au):
+
+     atom    1 type  1   force =     0.000000    0.000000   -0.001234
+     atom    2 type  2   force =     0.000345    0.000000    0.000654
+     atom    3 type  2   force =    -0.000345    0.000000    0.000654
+
+     Total force =     0.001134     Total SCF corrections =     0.000023
+
+     bfgs converged in   3 steps
+     energy old =      -17.18432841 Ry     new =      -17.18433187 Ry
+
+     ...
+
+     ------------------------------------------------------------------
+     Relaxation step #   3
+     ------------------------------------------------------------------
+
+     Forces acting on atoms (Ry/au):
+
+     atom    1 type  1   force =     0.000000    0.000000    0.000000
+     atom    2 type  2   force =     0.000000    0.000000    0.000000
+     atom    3 type  2   force =     0.000000    0.000000    0.000000
+
+     Total force =     0.000000     Total SCF corrections =     0.000000
+
+     bfgs converged in   1 steps
+     energy old =      -17.18433205 Ry     new =      -17.18433205 Ry
+
+     ------------------------------------------------------------------
+     Relaxation step #   3
+     ------------------------------------------------------------------
+
+          End of BFGS Geometry Optimization
+
+          Final energy =    -17.1843320467 Ry
+
+     ------------------------------------------------------------------
+     Computing forces (non-self-consistent)...
+
+     Forces acting on atoms (Ry/au):
+
+     atom    1 type  1   force =     0.000000    0.000000    0.000000
+     atom    2 type  2   force =     0.000000    0.000000    0.000000
+     atom    3 type  2   force =     0.000000    0.000000    0.000000
+
+     Total force =     0.000000     Total SCF corrections =     0.000000
+
+     ...
+
+     PWSCF        v.7.2 :    0h01m23s  CPU time    0h01m25s  Wall time
+     =========================================================================

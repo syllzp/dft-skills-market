@@ -1,0 +1,99 @@
+
+
+  ******************************************
+  *     CP2K version 2024.1 (Development)  *
+  *     MPI parallel: 4 ranks              *
+  ******************************************
+
+  Program started at 2026-05-22 10:00:00
+
+  GLOBAL
+
+  Project name:                                          h2o-opt
+  Run type:                                              GEO_OPT
+  ...
+
+  CELL
+
+  Cell lengths:     15.0000   15.0000   15.0000
+  Cell angles:      90.0000   90.0000   90.0000
+
+  ATOM GROUPS
+
+  1 H        0.000000    0.000000    0.000000
+  2 H        0.000000    0.000000    0.000000
+  3 O        0.000000    0.000000    0.000000
+
+  ...
+
+  DFT
+
+  Functional: PBE
+  Dispersion: DFT-D3
+  Basis set: DZVP-MOLOPT-SR-GTH
+  Pseudopotential: GTH-PBE
+
+  Spin: restricted (RKS)
+  Charge: 0
+
+  MGRID
+
+  Cutoff [Ry]:                        400
+  Relative cutoff [Ry]:               60
+  Number of multigrids:               4
+
+  ...
+
+  SCF WAVEFUNCTION OPTIMIZATION
+
+  Step     Energy [Eh]       Delta_E     |Gradient|   |Hessian|   Time
+  --------------------------------------------------------
+   1     -17.1234567890   -17.12345679     0.345678     1.234567   0.5s
+   2     -17.1543210987    -0.03086431     0.123456     0.987654   0.6s
+   3     -17.1612345678    -0.00691347     0.045678     0.456789   0.5s
+   4     -17.1623456789    -0.00111111     0.012345     0.234567   0.5s
+   5     -17.1624012345    -0.00005556     0.003456     0.123456   0.6s
+   6     -17.1624109876    -0.00000975     0.000678     0.045678   0.5s
+   7     -17.1624112345    -0.00000025     0.000123     0.012345   0.5s
+
+  *** SCF run converged in    7 steps ***
+
+  ...
+
+  GEOMETRY OPTIMIZATION CYCLE
+
+  Step     Energy [Eh]       Delta_E     RMS Force   Max Force    RMS Disp    Step
+  --------------------------------------------------------
+   1     -17.1624112345   -17.16241123     0.008901    0.012345    0.123456    1
+  ...
+
+   5     -17.1734567890    -0.00034567     0.000567    0.000789    0.012345    5
+   6     -17.1735012345    -0.00004445     0.000230    0.000345    0.005678    6
+   7     -17.1735123456    -0.00001111     0.000098    0.000156    0.002345    7
+
+  --------------------------------------------------------
+  GEO_OPT CONVERGED after      7 steps
+  --------------------------------------------------------
+
+  Final energy:       -17.1735123456 Eh
+  Energy change:      -0.00001111 Eh
+  RMS force:           0.000098
+  MAX force:           0.000156
+  RMS displacement:    0.002345
+  MAX displacement:    0.004567
+
+  OPTIMIZATION CONVERGED
+
+  Final atomic coordinates:
+
+  Atom  Element       X [Ang]        Y [Ang]        Z [Ang]
+  ----------------------------------------------------------
+    1   O             0.000000       0.000000       0.123456
+    2   H             0.757000       0.000000      -0.493827
+    3   H            -0.757000       0.000000      -0.493827
+
+  O-H bond length:          0.964 Ang
+  H-O-H angle:            104.50 deg
+
+  CP2K finished at 2026-05-22 10:02:34
+  Total runtime: 2.34 minutes

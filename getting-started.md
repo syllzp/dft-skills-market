@@ -14,6 +14,10 @@ dft-skills-market/
 │   ├── skills/               # 子技能（扁平结构）
 │   ├── shared/               # 模板、脚本、参考资料
 │   └── examples/             # 示例输入/输出
+├── vasp-dft-skills/          # VASP 技能包
+├── qe-dft-skills/            # Quantum Espresso 技能包
+├── gaussian-dft-skills/      # Gaussian 技能包
+├── cp2k-dft-skills/          # CP2K 技能包
 └── .github/workflows/        # GitHub Actions 部署
 ```
 
@@ -25,17 +29,36 @@ dft-skills-market/
 2. **独立安装** — 只需要哪个软件的技能，就复制哪个文件夹
 3. **无交叉依赖** — 不同软件包之间没有任何关联
 
-## 运行 ORCA 计算
+## 运行 DFT 计算
 
-生成 `.inp` 文件后，在终端中运行：
-
+### ORCA
 ```bash
-export ORCA_MAXCORE=4000    # 设置可用内存（MB）
+export ORCA_MAXCORE=4000
 orca <filename>.inp > <filename>.out
+```
+
+### VASP
+```bash
+mpirun -np <nproc> vasp_std
+```
+
+### Quantum Espresso
+```bash
+pw.x < <input>.in > <input>.out
+```
+
+### Gaussian
+```bash
+g16 < <filename>.com > <filename>.log
+```
+
+### CP2K
+```bash
+mpirun -np <nproc> cp2k.popt < <input>.inp > <input>.out
 ```
 
 ## 后续步骤
 
-- 查看 **[ORCA 文档](./docs/orca/)** 学习几何优化输入生成
-- 阅读 **[架构说明](./architecture.md)** 了解 SKILL.md 格式
+- 查看 **[架构说明](./architecture.md)** 了解 SKILL.md 格式
+- 选择需要的软件包（`xxx-dft-skills/`）复制到工作目录
 - 参考 **[贡献指南](./contributing.md)** 添加新技能

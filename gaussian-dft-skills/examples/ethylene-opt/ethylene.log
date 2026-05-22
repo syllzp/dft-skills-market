@@ -1,0 +1,81 @@
+                                 Gaussian 16:  ES64L-G16RevC.01  Sep 2021
+                                 =============================
+         B3LYP/6-31G(d) Opt=Tight scf=tight int=ultrafine empiricaldispersion=gd3bj
+         ----------------------------------------------------------------------------
+
+         Symbolic Z-matrix:
+         Charge =  0   Multiplicity = 1
+         C,0.,0.,0.668
+         C,0.,0.,-0.668
+         H,0.,0.924,1.237
+         H,0.,-0.924,1.237
+         H,0.,0.924,-1.237
+         H,0.,-0.924,-1.237
+
+                          Molecular Point Group: D2h
+                          Full point group: D2h
+
+         SCF Done:  E(RB3LYP) =  -78.5863497102     A.U. after   8 cycles
+         Convg  =    0.6205D-09     -V/T =  2.0032
+         <S**2> =   0.0000
+
+                           ----------------------------
+                           GEOMETRY OPTIMIZATION CYCLE 1
+                           ----------------------------
+
+                           RMS Force Criteria   0.000010   (Tight)
+                           RMS Disp Criteria    0.000040   (Tight)
+
+         Item               Value     Threshold  Converged?
+         Maximum Force       0.002910  0.000015     NO
+         RMS     Force       0.001440  0.000010     NO
+         Maximum Displacement 0.006338  0.000060     NO
+         RMS     Displacement 0.003817  0.000040     NO
+
+         SCF Done:  E(RB3LYP) =  -78.5863497102     A.U. after   8 cycles
+
+                           ----------------------------
+                           GEOMETRY OPTIMIZATION CYCLE 2
+                           ----------------------------
+
+         Item               Value     Threshold  Converged?
+         Maximum Force       0.000238  0.000015     NO
+         RMS     Force       0.000114  0.000010     NO
+         Maximum Displacement 0.001790  0.000060     NO
+         RMS     Displacement 0.000950  0.000040     NO
+
+                           ----------------------------
+                           GEOMETRY OPTIMIZATION CYCLE 3
+                           ----------------------------
+
+         Item               Value     Threshold  Converged?
+         Maximum Force       0.000021  0.000015     NO
+         RMS     Force       0.000012  0.000010     NO
+         Maximum Displacement 0.000150  0.000060     NO
+         RMS     Displacement 0.000080  0.000040     NO
+
+                           ----------------------------
+                           GEOMETRY OPTIMIZATION CYCLE 4
+                           ----------------------------
+
+         Item               Value     Threshold  Converged?
+         Maximum Force       0.000002  0.000015     YES
+         RMS     Force       0.000001  0.000010     YES
+         Maximum Displacement 0.000012  0.000060     YES
+         RMS     Displacement 0.000007  0.000040     YES
+
+         Optimization completed.
+            -- Stationary point found.
+
+                           ----------------------------
+                           OPTIMIZED GEOMETRY (Angstroms)
+                           ----------------------------
+
+         C              0.000000      0.000000      0.662700
+         C              0.000000      0.000000     -0.662700
+         H              0.000000      0.923200      1.237000
+         H              0.000000     -0.923200      1.237000
+         H              0.000000      0.923200     -1.237000
+         H              0.000000     -0.923200     -1.237000
+
+         Job completed successfully.

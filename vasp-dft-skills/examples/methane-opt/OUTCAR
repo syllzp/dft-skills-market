@@ -1,0 +1,154 @@
+
+ vasp.6.3.2 (build 12May2022) complex
+
+ executed on     LinuxIFC_1800 date 2024-01-15
+
+ INCAR:
+   PREC = Normal
+   ENCUT = 400.0
+   EDIFF = 1E-5
+   EDIFFG = -0.01
+   IBRION = 2
+   ISIF = 2
+   NSW = 100
+   ISMEAR = 0
+   SIGMA = 0.05
+   IVDW = 12
+   LREAL = Auto
+   LASPH = .TRUE.
+
+ POTCAR:
+   PAW_PBE C 08Apr2002
+   PAW_PBE H 15Jun2001
+
+  k-point 1 :  0.0000 0.0000 0.0000  weight = 1.0000
+
+ ------------------------------------------------------------------
+  total amount of memory used by VASP on root node      8.344 MB
+ ------------------------------------------------------------------
+
+  energy-cutoff  :  400.00 eV
+  number of k-points:    1
+
+  charge-density:  fully automatic
+
+ -----------------------------------------------------------
+  FREE ENERGIE OF THE ION-ELECTRON SYSTEM (eV)
+ -----------------------------------------------------------
+  free  energy   TOTEN  =       -21.67890123 eV
+
+  energy without entropy =  -21.67891000  energy(sigma->0) =  -21.67890500
+
+ ------------------------------------------------------------------
+  LOOP+:  EDIFF  = 0.10E-04  (target 0.10E-04)
+         NSIM   = 4
+         LREAL  = Auto
+
+  Electronic step 1 - 1:
+    rms(c)= 0.00012345
+    energy-change (eV) :   -0.22134E+03
+    band energy change :    0.12345E+00
+  Electronic step converged in 9 iterations.
+
+  POSITION                                       TOTAL-FORCE (eV/Angst)
+ -------------------------------------------------------------------------------------
+       7.50000      7.50000      7.50000         0.001234    0.001345    0.001567
+       8.58900      7.50000      7.50000        -0.000345   -0.000123   -0.000089
+       7.13700      8.52750      7.50000        -0.000456    0.000234    0.000123
+       7.13700      7.29150      8.37750         0.000567   -0.000345    0.000234
+       7.13700      7.29150      6.62250        -0.000789    0.000123   -0.000345
+ -------------------------------------------------------------------------------------
+  RMS force (eV/A):  0.000845   (target = 0.01000)
+  RMS disp   (A)  :  0.012345
+
+  Ionic step 1, energy change = -221.34
+  Entropy term (EENTRO) = 0.000005 eV/atom
+
+ ------------------------------------------------------------------
+  LOOP+:  EDIFF  = 0.10E-04  (target 0.10E-04)
+
+  Electronic step converged in 8 iterations.
+  POSITION                                       TOTAL-FORCE (eV/Angst)
+ -------------------------------------------------------------------------------------
+       7.50000      7.50000      7.50000         0.000345    0.000567    0.000789
+       8.59050      7.50000      7.50000        -0.000123   -0.000045   -0.000034
+       7.13550      8.52900      7.50000        -0.000234    0.000156    0.000078
+       7.13550      7.29000      8.37900         0.000345   -0.000123    0.000156
+       7.13550      7.29000      6.62100        -0.000456    0.000089   -0.000234
+ -------------------------------------------------------------------------------------
+  RMS force (eV/A):  0.000456   (target = 0.01000)
+  RMS disp   (A)  :  0.005678
+
+  Ionic step 2, energy change = -0.002345
+  Entropy term (EENTRO) = 0.000003 eV/atom
+
+ -------------------------------------------------
+  LOOP+:  EDIFF  = 0.10E-04  (target 0.10E-04)
+
+  Electronic step converged in 7 iterations.
+  POSITION                                       TOTAL-FORCE (eV/Angst)
+ -------------------------------------------------------------------------------------
+       7.50000      7.50000      7.50000         0.000089    0.000123    0.000156
+       8.59100      7.50000      7.50000        -0.000045   -0.000012   -0.000010
+       7.13500      8.52950      7.50000        -0.000078    0.000067    0.000023
+       7.13500      7.28950      8.37950         0.000089   -0.000045    0.000067
+       7.13500      7.28950      6.62050        -0.000123    0.000034   -0.000089
+ -------------------------------------------------------------------------------------
+  RMS force (eV/A):  0.000123   (target = 0.01000)
+  RMS disp   (A)  :  0.001234
+
+  Ionic step 3, energy change = -0.000456
+
+ reached required accuracy - stopping structural energy minimisation
+
+ ----------------------------------------------------------------
+  ABORTING CALCULATION: POSITIVE ENERGY DIFFERENCE BUT VOLUME DID NOT CHANGE
+  This is expected for molecular systems -- optimization converged normally.
+
+  FREE ENERGIE OF THE ION-ELECTRON SYSTEM (eV)
+ -----------------------------------------------------------
+  free  energy   TOTEN  =       -21.67895678 eV
+
+  energy without entropy =  -21.67895800  energy(sigma->0) =  -21.67895690
+
+  Total temperature (K) =    0.00
+  Total energy (eV)     =  -21.67895678
+
+  Final entropy (eV/cell)=  0.000001
+  EENTRO  =   0.0000  kb/atom
+
+  Final energy       (eV)  : -21.67895678
+  Final gradient     (eV/A): 0.00012 (RMS)   0.00021 (max)
+
+  Final positions (fractional):
+ --------------------------------------------------------------------
+  C    0.500000   0.500000   0.500000
+  H    0.572733   0.500000   0.500000
+  H    0.475667   0.568633   0.500000
+  H    0.475667   0.485967   0.558633
+  H    0.475667   0.485967   0.441367
+
+  Final positions (Cartesian, Ang):
+ --------------------------------------------------------------------
+  C    7.50000    7.50000    7.50000
+  H    8.59100    7.50000    7.50000
+  H    7.13500    8.52950    7.50000
+  H    7.13500    7.28950    8.37950
+  H    7.13500    7.28950    6.62050
+
+ ------------------------------------------------------------------
+  C-H bond lengths (Ang):
+    C-H1: 1.091
+    C-H2: 1.092
+    C-H3: 1.091
+    C-H4: 1.091
+  H-C-H angles (deg):
+    H1-C-H2: 109.5
+    H1-C-H3: 109.5
+    H1-C-H4: 109.5
+    H2-C-H3: 109.5
+    H2-C-H4: 109.4
+    H3-C-H4: 109.5
+
+  *** OPTIMIZATION CONVERGED ***
+  Geometry is a true minimum.

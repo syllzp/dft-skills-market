@@ -1,0 +1,40 @@
+&CONTROL
+  calculation = 'vc-relax'
+  prefix      = '<NAME>'
+  outdir      = './tmp/'
+  pseudo_dir  = './pseudo/'
+  verbosity   = 'high'
+  etot_conv_thr = 1.D-4
+  forc_conv_thr = 1.D-3
+/
+&SYSTEM
+  ibrav       = 0
+  nat         = <N_ATOMS>
+  ntyp        = <N_TYPES>
+  ecutwfc     = <ECUTWFC>
+  ecutrho     = <ECUTRHO>
+  occupations = 'fixed'
+/
+&ELECTRONS
+  conv_thr         = 1.D-6
+  mixing_beta      = 0.5
+  mixing_mode      = 'plain'
+  electron_maxstep = 100
+/
+&IONS
+  ion_dynamics = 'bfgs'
+/
+&CELL
+  cell_dynamics = 'bfgs'
+  press         = 0.0
+  cell_dofree   = 'all'
+/
+ATOMIC_SPECIES
+ <TYPE1> <MASS1> <PSEUDO1>
+ <TYPE2> <MASS2> <PSEUDO2>
+ ...
+ATOMIC_POSITIONS {angstrom}
+ <ELEMENT> <X> <Y> <Z>
+ ...
+K_POINTS {automatic}
+ <N1> <N2> <N3> 0 0 0

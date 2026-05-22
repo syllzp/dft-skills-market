@@ -1,0 +1,44 @@
+&CONTROL
+  calculation = 'relax'
+  prefix      = '<NAME>'
+  outdir      = './tmp/'
+  pseudo_dir  = './pseudo/'
+  verbosity   = 'high'
+  etot_conv_thr = 1.D-5
+  forc_conv_thr = 1.D-4
+/
+&SYSTEM
+  ibrav       = 0
+  nat         = <N_ATOMS>
+  ntyp        = <N_TYPES>
+  ecutwfc     = <ECUTWFC>
+  ecutrho     = <ECUTRHO>
+  occupations = 'smearing'
+  smearing    = 'gaussian'
+  degauss     = 0.02
+  nspin       = 2
+  starting_magnetization(1) = <MAG1>
+  starting_magnetization(2) = <MAG2>
+  vdw_corr    = 'DFT-D3'
+  lda_plus_u  = .true.
+  Hubbard_U(1) = <U1>
+  Hubbard_U(2) = <U2>
+/
+&ELECTRONS
+  conv_thr         = 1.D-6
+  mixing_beta      = 0.3
+  mixing_mode      = 'plain'
+  electron_maxstep = 200
+/
+&IONS
+  ion_dynamics = 'bfgs'
+/
+ATOMIC_SPECIES
+ <TYPE1> <MASS1> <PSEUDO1>
+ <TYPE2> <MASS2> <PSEUDO2>
+ ...
+ATOMIC_POSITIONS {angstrom}
+ <ELEMENT> <X> <Y> <Z>
+ ...
+K_POINTS {automatic}
+ <N1> <N2> <N3> 0 0 0

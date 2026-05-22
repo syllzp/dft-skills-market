@@ -1,0 +1,19 @@
+# VASP 6.x input file -- generated for academic use
+# Pt13 cluster geometry optimization at PBE-D3 level with spin
+PREC = Normal
+ENCUT = 520
+EDIFF = 1E-5
+EDIFFG = -0.01
+IBRION = 2
+ISIF = 2
+NSW = 100
+ISMEAR = 1
+SIGMA = 0.20
+LREAL = Auto
+ISPIN = 2
+MAGMOM = 13*1.0
+IVDW = 12
+LASPH = .TRUE.
+LMAXMIX = 4
+LWAVE = .FALSE.
+LCHARG = .FALSE.

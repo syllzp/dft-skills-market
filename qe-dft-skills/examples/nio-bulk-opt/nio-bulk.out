@@ -1,0 +1,143 @@
+                             ------------------------------------------------------------------
+                                PWSCF        v.7.2 (release)
+                             ------------------------------------------------------------------
+
+              Parallel version (MPI), running on     8 processors
+
+              ... MPI processes distributed on 1 nodes ...
+
+     Program PWSCF v.7.2 starts on 22 May 2026 at 11:00:15
+
+     Reading input from nio-bulk.in
+
+     ------------------------------------------------------------------
+
+     Crystal axes: (cart. coord. in a.u.)
+       a(1) = (   7.880784  0.000000  0.000000 )
+       a(2) = (   0.000000  7.880784  0.000000 )
+       a(3) = (   0.000000  0.000000  7.880784 )
+
+     ...
+
+     Cartesian axes
+
+     site n.     atom                  positions (a.u.)
+         1         Ni  tau(1) = (   0.000000  0.000000  0.000000 )
+         2         Ni  tau(2) = (   3.940392  3.940392  3.940392 )
+         3          O  tau(3) = (   3.940392  3.940392  0.000000 )
+         4          O  tau(4) = (   0.000000  3.940392  3.940392 )
+
+     number of k points=   216
+                       with symmetries reduced to    10
+
+     ...
+
+     Starting wfc are  2 random wfc
+     Magnetization: AFM type II (G-type)
+     Starting magnetic moments:
+     Ni: up   2.50 uB  (starting_magnetization = 0.50)
+     O:  up   0.50 uB  (starting_magnetization = 0.10)
+
+     ...
+
+     iteration #  1     ecut=    60.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+     ethr = 1.00E-03,  avg. number of iterations:  3.0
+
+     ...
+
+          total energy              =    -183.45678901 Ry
+          estimated scf accuracy    =       0.00001234 Ry
+
+          total spin contamination  =       0.003456
+          magnetization (cube)      =       1.67890 uB
+          magnetization (integ)     =       1.67902 uB
+
+     ...
+
+          total energy              =    -183.45987654 Ry
+          estimated scf accuracy    =       0.00000045 Ry
+
+          total spin contamination  =       0.000123
+          magnetization (cube)      =       1.70123 uB
+          magnetization (integ)     =       1.70128 uB
+
+     ...
+
+     ------------------------------------------------------------------
+     Variable-cell relaxation step #   1
+     ------------------------------------------------------------------
+
+     Forces acting on atoms (Ry/au):
+
+     atom    1 type  1   force =   0.000123  0.000123  0.000123
+     atom    2 type  1   force =  -0.000100 -0.000100 -0.000100
+     atom    3 type  2   force =   0.000045  0.000045 -0.000045
+     atom    4 type  2   force =  -0.000068 -0.000068  0.000068
+
+     Total force =     0.000187     Total SCF corrections =     0.000015
+
+     bfgs converged in   4 steps
+     energy old =     -183.45987654 Ry     new =     -183.46012345 Ry
+
+     New cell lattice vectors (angstrom):
+       a(1) = (   4.168500  0.000000  0.000000 )
+       a(2) = (   0.000000  4.168500  0.000000 )
+       a(3) = (   0.000000  0.000000  4.168500 )
+
+     ...
+
+     ------------------------------------------------------------------
+     Variable-cell relaxation step #   5
+     ------------------------------------------------------------------
+
+     Forces acting on atoms (Ry/au):
+
+     atom    1 type  1   force =   0.000001  0.000001  0.000001
+     atom    2 type  1   force =  -0.000001 -0.000001 -0.000001
+     atom    3 type  2   force =   0.000000  0.000000  0.000000
+     atom    4 type  2   force =   0.000000  0.000000  0.000000
+
+     Total force =     0.000001     Total SCF corrections =     0.000000
+
+     bfgs converged in   2 steps
+     energy old =     -183.46123456 Ry     new =     -183.46123457 Ry
+
+     New cell lattice vectors (angstrom):
+       a(1) = (   4.167200  0.000000  0.000000 )
+       a(2) = (   0.000000  4.167200  0.000000 )
+       a(3) = (   0.000000  0.000000  4.167200 )
+
+     P =      0.00 GPa
+
+     ------------------------------------------------------------------
+     Variable-cell relaxation step #   5
+     ------------------------------------------------------------------
+
+          End of BFGS Geometry Optimization
+
+          Final energy =    -183.4612345678 Ry
+          Final lattice constant a = 4.1672 Angstrom
+
+     ------------------------------------------------------------------
+     Computing forces (non-self-consistent)...
+
+     Forces acting on atoms (Ry/au):
+
+     atom    1 type  1   force =   0.000000  0.000000  0.000000
+     atom    2 type  1   force =   0.000000  0.000000  0.000000
+     atom    3 type  2   force =   0.000000  0.000000  0.000000
+     atom    4 type  2   force =   0.000000  0.000000  0.000000
+
+     Total force =     0.000000     Total SCF corrections =     0.000000
+
+     Final magnetization:
+     atom    1 type  1   mag =   1.70123 uB
+     atom    2 type  1   mag =  -1.70123 uB
+     atom    3 type  2   mag =   0.04567 uB
+     atom    4 type  2   mag =  -0.04567 uB
+
+     ...
+
+     PWSCF        v.7.2 :    0h05m45s  CPU time    0h05m52s  Wall time
+     =========================================================================

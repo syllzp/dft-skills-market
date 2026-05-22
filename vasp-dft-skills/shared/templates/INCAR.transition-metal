@@ -1,0 +1,16 @@
+# VASP 6.x input file -- generated for academic use
+# Transition metal geometry optimization
+PREC = Normal
+ENCUT = 520
+EDIFF = 1E-5
+EDIFFG = -0.01
+IBRION = 2
+ISIF = 2
+NSW = 100
+ISMEAR = 1
+SIGMA = 0.20
+LREAL = Auto
+ISPIN = 2
+MAGMOM = 5.0 <N_ATOMS>
+LWAVE = .FALSE.
+LCHARG = .FALSE.

@@ -1,0 +1,17 @@
+POTCAR generation reference:
+   PotCAR directory: ~/potpaw_PBE_54/
+   Elements needed: Pt (Platinum)
+
+   Command used:
+     cat ~/potpaw_PBE_54/POTCAR_Pt > POTCAR
+
+   Pseudopotential:
+     PAW_PBE Pt 08Apr2002    ENMAX = 294.903 eV
+
+   Maximum ENMAX = 294.903 eV (from Pt)
+   Recommended ENCUT = 384 eV (1.30 x ENMAX) [standard]
+   Recommended ENCUT = 443 eV (1.50 x ENMAX) [precise]
+
+   Note: For Pt, ENMAX from POTCAR is ~295 eV, but a higher
+   ENCUT of 520 eV is used in this example to ensure accurate forces
+   and energetic comparisons. This is a common conservative choice.

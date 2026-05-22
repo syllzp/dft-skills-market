@@ -1,0 +1,14 @@
+POTCAR generation reference:
+   PotCAR directory: ~/potpaw_PBE_54/
+   Elements needed: C (Carbon), H (Hydrogen)
+
+   Command used:
+     cat ~/potpaw_PBE_54/POTCAR_C ~/potpaw_PBE_54/POTCAR_H > POTCAR
+
+   Pseudopotentials:
+     PAW_PBE C 08Apr2002    ENMAX = 400.00 eV
+     PAW_PBE H 15Jun2001    ENMAX = 250.00 eV
+
+   Maximum ENMAX = 400.00 eV (from C)
+   Recommended ENCUT = 400 eV (1.30 x ENMAX) [standard]
+   Recommended ENCUT = 600 eV (1.50 x ENMAX) [precise]

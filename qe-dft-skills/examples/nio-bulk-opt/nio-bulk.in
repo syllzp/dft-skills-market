@@ -1,0 +1,53 @@
+&CONTROL
+  calculation = 'vc-relax'
+  prefix      = 'nio-bulk'
+  outdir      = './tmp/'
+  pseudo_dir  = './pseudo/'
+  verbosity   = 'high'
+  etot_conv_thr = 1.D-5
+  forc_conv_thr = 1.D-4
+/
+&SYSTEM
+  ibrav       = 0
+  nat         = 4
+  ntyp        = 2
+  ecutwfc     = 60
+  ecutrho     = 480
+  occupations = 'smearing'
+  smearing    = 'gaussian'
+  degauss     = 0.02
+  nspin       = 2
+  starting_magnetization(1) = 0.5
+  starting_magnetization(2) = 0.1
+  lda_plus_u  = .true.
+  Hubbard_U(1) = 6.0
+  Hubbard_U(2) = 0.0
+/
+&ELECTRONS
+  conv_thr         = 1.D-7
+  mixing_beta      = 0.3
+  mixing_mode      = 'plain'
+  electron_maxstep = 200
+/
+&IONS
+  ion_dynamics = 'bfgs'
+/
+&CELL
+  cell_dynamics = 'bfgs'
+  press         = 0.0
+  cell_dofree   = 'all'
+/
+ATOMIC_SPECIES
+  Ni  58.693  Ni.pbe-n-kjpaw_psl.1.0.0.UPF
+  O   15.999  O.pbe-n-kjpaw_psl.1.0.0.UPF
+CELL_PARAMETERS {angstrom}
+  4.170000   0.000000   0.000000
+  0.000000   4.170000   0.000000
+  0.000000   0.000000   4.170000
+ATOMIC_POSITIONS {crystal}
+  Ni    0.000000   0.000000   0.000000
+  Ni    0.500000   0.500000   0.500000
+  O     0.500000   0.500000   0.000000
+  O     0.000000   0.500000   0.500000
+K_POINTS {automatic}
+  6 6 6 0 0 0
