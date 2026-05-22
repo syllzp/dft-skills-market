@@ -54,7 +54,6 @@ dft-skills-market/
 ├── qe-dft-skills/              # Quantum ESPRESSO 技能包
 ├── gaussian-dft-skills/        # Gaussian 技能包
 ├── cp2k-dft-skills/            # CP2K 技能包
-├── orca/                       # ORCA 文档页（Jekyll 站点使用）
 ├── .github/workflows/          # GitHub Pages 自动部署
 ├── index.md                    # 站点首页
 ├── architecture.md             # 架构说明
