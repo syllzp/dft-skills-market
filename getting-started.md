@@ -17,6 +17,7 @@ dft-skills-market/
 │   │   ├── freq-input/       #   频率计算输入生成
 │   │   ├── tddft-input/      #   TDDFT 激发态输入生成
 │   │   ├── basis-reference/  #   基组选择参考
+│   │   ├── relativistic-reference/  #   相对论效应参考
 │   │   ├── output-parse/     #   输出文件解析
 │   │   └── error-diagnosis/  #   异常诊断
 │   ├── shared/               # 模板、脚本、参考资料

@@ -10,13 +10,13 @@
 
 | 软件 | 包目录 | 就绪子技能 | 状态 |
 |------|--------|-----------|------|
-| **ORCA** 5+ | `orca-dft-skills/` | `geo-opt-input`, `sp-energy-input`, `freq-input`, `tddft-input`, `basis-reference`, `output-parse`, `error-diagnosis` | ✅ **全部就绪** |
+| **ORCA** 5+ | `orca-dft-skills/` | `geo-opt-input`, `sp-energy-input`, `freq-input`, `tddft-input`, `basis-reference`, `relativistic-reference`, `output-parse`, `error-diagnosis` | ✅ **全部就绪** |
 | **VASP** 6.x | `vasp-dft-skills/` | `geo-opt-input`, `sp-energy-input`, `freq-input`, `output-parse`, `error-diagnosis` | ✅ **全部就绪** |
 | **Quantum ESPRESSO** 7.x | `qe-dft-skills/` | `geo-opt-input`, `sp-energy-input`, `freq-input`, `output-parse`, `error-diagnosis` | ✅ **全部就绪** |
-| **Gaussian** 16 | `gaussian-dft-skills/` | `geo-opt-input`, `sp-energy-input`, `freq-input`, `tddft-input`, `basis-reference`, `output-parse`, `error-diagnosis` | ✅ **全部就绪** |
+| **Gaussian** 16 | `gaussian-dft-skills/` | `geo-opt-input`, `sp-energy-input`, `freq-input`, `tddft-input`, `basis-reference`, `relativistic-reference`, `output-parse`, `error-diagnosis` | ✅ **全部就绪** |
 | **CP2K** 2024.x | `cp2k-dft-skills/` | `geo-opt-input`, `sp-energy-input`, `freq-input`, `output-parse`, `error-diagnosis` | ✅ **全部就绪** |
 
-> ORCA 和 Gaussian 额外支持 **TDDFT/激发态计算输入生成** 和 **基组选择参考** 子技能。
+> ORCA 和 Gaussian 额外支持 **TDDFT/激发态计算输入生成**、**基组选择参考** 和 **相对论效应计算参考** 子技能。
 
 ---
 
