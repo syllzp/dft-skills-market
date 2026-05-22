@@ -1,0 +1,22 @@
+# Single-point energy of <MOLECULE_NAME> at <FUNCTIONAL>-D3(BJ)/<BASIS> level
+# Transition metal complex -- tighter SCF convergence
+# ORCA 5+ input file -- generated for academic use
+
+! <FUNCTIONAL> D3BJ <BASIS> RIJCOSX DefGrid2 TightSCF
+
+%maxcore <MEMORY_MB>
+
+%scf
+  MaxIter 500
+  Convergence Tight
+end
+
+%output
+  Print[ P_Basis ] 1
+  Print[ P_Mulliken ] 1
+  Print[ P_Loewdin ] 1
+end
+
+* xyz <CHARGE> <MULTIPLICITY>
+<COORDINATES>
+*

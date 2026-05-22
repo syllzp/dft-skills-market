@@ -12,13 +12,20 @@ dft-skills-market/
 ├── orca-dft-skills/          # ORCA 技能包
 │   ├── main/SKILL.md         # 主分发器
 │   ├── skills/               # 子技能（扁平结构）
+│   │   ├── geo-opt-input/    #   几何优化输入生成
+│   │   ├── sp-energy-input/  #   单点能输入生成
+│   │   ├── freq-input/       #   频率计算输入生成
+│   │   ├── tddft-input/      #   TDDFT 激发态输入生成
+│   │   ├── basis-reference/  #   基组选择参考
+│   │   ├── output-parse/     #   输出文件解析
+│   │   └── error-diagnosis/  #   异常诊断
 │   ├── shared/               # 模板、脚本、参考资料
 │   └── examples/             # 示例输入/输出
 ├── vasp-dft-skills/          # VASP 技能包
 ├── qe-dft-skills/            # Quantum Espresso 技能包
 ├── gaussian-dft-skills/      # Gaussian 技能包
 ├── cp2k-dft-skills/          # CP2K 技能包
-└── .github/workflows/        # GitHub Actions 部署
+└── .github/workflows/        # GitHub Pages 部署
 ```
 
 ## 使用技能

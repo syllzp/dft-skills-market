@@ -1,0 +1,13 @@
+Phonon dispersion calculation of <NAME>
+&INPUTPH
+  outdir   = '<OUTDIR>'
+  prefix   = '<NAME>'
+  ldisp    = .TRUE.
+  nq1      = <NQ1>
+  nq2      = <NQ2>
+  nq3      = <NQ3>
+  tr2_ph   = 1.D-14
+  epsil    = .FALSE.
+  trans    = .TRUE.
+  recover  = .FALSE.
+/

@@ -1,0 +1,11 @@
+# Harmonic frequency analysis of <MOLECULE_NAME> (charge=<CHARGE>, mult=<MULTIPLICITY>)
+# Anion/cation -- diffuse functions and fine grid
+# ORCA 5+ input file -- generated for academic use
+
+! <FUNCTIONAL> D3BJ <BASIS> Freq RIJCOSX DefGrid3 TightSCF
+
+%maxcore <MEMORY_MB>
+
+* xyz <CHARGE> <MULTIPLICITY>
+<COORDINATES>
+*

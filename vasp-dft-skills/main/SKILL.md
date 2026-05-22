@@ -7,17 +7,21 @@ VASP 6.x computational chemistry skill suite for input generation, error diagnos
 | Sub-Skill | Purpose | Path |
 |---|---|---|
 | geo-opt-input | Generate VASP geometry optimization input files | `../skills/geo-opt-input/SKILL.md` |
+| sp-energy-input | Generate single-point energy input files | `../skills/sp-energy-input/SKILL.md` |
+| freq-input | Generate phonon/frequency calculation input files | `../skills/freq-input/SKILL.md` |
+| output-parse | Parse VASP OUTCAR/OSZICAR output and extract results | `../skills/output-parse/SKILL.md` |
+| error-diagnosis | Diagnose VASP calculation errors and suggest fixes | `../skills/error-diagnosis/SKILL.md` |
 
 ## Dispatch Logic
 
 When a user requests VASP-related work, route to the appropriate sub-skill:
 
 - **Generate geometry optimization input** (keywords: optimize, relax, minimize geometry, VASP relaxation, ion motion) → `../skills/geo-opt-input/SKILL.md`
-- **Single-point energy input** → Not yet available
+- **Generate single-point energy input** (keywords: single-point, SP, energy, SCF energy, static calculation) → `../skills/sp-energy-input/SKILL.md`
+- **Generate phonon/frequency input** (keywords: phonon, frequency, freq, vibrational, Hessian, IBRION=5, DFPT) → `../skills/freq-input/SKILL.md`
+- **Parse VASP output** (keywords: parse, extract, read OUTCAR, results, energy from output, analyze output) → `../skills/output-parse/SKILL.md`
+- **Diagnose VASP errors** (keywords: error, failed, SCF error, POSCAR error, POTCAR, crash, debug, OUTCAR error) → `../skills/error-diagnosis/SKILL.md`
 - **NEB/transition state search** → Not yet available
-- **Phonon/frequency calculation** → Not yet available
-- **Error diagnosis (OUTCAR errors, SCF failures)** → Not yet available
-- **Output parsing** → Not yet available
 
 If a request does not match any available sub-skill, inform the user and list what is available.
 

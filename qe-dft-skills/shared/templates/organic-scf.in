@@ -1,0 +1,30 @@
+&CONTROL
+  calculation = 'scf'
+  prefix      = '<NAME>'
+  outdir      = './tmp/'
+  pseudo_dir  = './pseudo/'
+  verbosity   = 'high'
+/
+&SYSTEM
+  ibrav       = 0
+  nat         = <N_ATOMS>
+  ntyp        = <N_TYPES>
+  ecutwfc     = <ECUTWFC>
+  ecutrho     = <ECUTRHO>
+  occupations = 'smearing'
+  smearing    = 'marzari-vanderbilt'
+  degauss     = 0.01
+  vdw_corr    = 'DFT-D3'
+/
+&ELECTRONS
+  conv_thr         = 1.D-7
+  mixing_beta      = 0.7
+  mixing_mode      = 'local-TF'
+  electron_maxstep = 200
+  diago_thr_init   = 1.D-5
+/
+ATOMIC_SPECIES
+<TYPES>
+ATOMIC_POSITIONS {angstrom}
+<POSITIONS>
+K_POINTS {gamma}

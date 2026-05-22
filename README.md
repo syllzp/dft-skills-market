@@ -10,13 +10,13 @@
 
 | 软件 | 包目录 | 就绪子技能 | 状态 |
 |------|--------|-----------|------|
-| **ORCA** 5+ | `orca-dft-skills/` | `geo-opt-input` — 几何优化输入生成 | ✅ **就绪** |
-| **VASP** 6.x | `vasp-dft-skills/` | `geo-opt-input` — 几何优化输入生成 | ✅ **就绪** |
-| **Quantum ESPRESSO** 7.x | `qe-dft-skills/` | `geo-opt-input` — 几何优化输入生成 | ✅ **就绪** |
-| **Gaussian** 16 | `gaussian-dft-skills/` | `geo-opt-input` — 几何优化输入生成 | ✅ **就绪** |
-| **CP2K** 2024.x | `cp2k-dft-skills/` | `geo-opt-input` — 几何优化输入生成 | ✅ **就绪** |
+| **ORCA** 5+ | `orca-dft-skills/` | `geo-opt-input`, `sp-energy-input`, `freq-input`, `tddft-input`, `basis-reference`, `output-parse`, `error-diagnosis` | ✅ **全部就绪** |
+| **VASP** 6.x | `vasp-dft-skills/` | `geo-opt-input`, `sp-energy-input`, `freq-input`, `output-parse`, `error-diagnosis` | ✅ **全部就绪** |
+| **Quantum ESPRESSO** 7.x | `qe-dft-skills/` | `geo-opt-input`, `sp-energy-input`, `freq-input`, `output-parse`, `error-diagnosis` | ✅ **全部就绪** |
+| **Gaussian** 16 | `gaussian-dft-skills/` | `geo-opt-input`, `sp-energy-input`, `freq-input`, `tddft-input`, `basis-reference`, `output-parse`, `error-diagnosis` | ✅ **全部就绪** |
+| **CP2K** 2024.x | `cp2k-dft-skills/` | `geo-opt-input`, `sp-energy-input`, `freq-input`, `output-parse`, `error-diagnosis` | ✅ **全部就绪** |
 
-> 每个软件包目前均提供 **几何优化输入生成** 子技能。错误诊断、输出解析等更多子技能开发中。
+> ORCA 和 Gaussian 额外支持 **TDDFT/激发态计算输入生成** 和 **基组选择参考** 子技能。
 
 ---
 
@@ -68,7 +68,13 @@ dft-skills-market/
 ```
 xxx-dft-skills/
 ├── main/SKILL.md               # 分发器：列出子技能、分配任务
-├── skills/<sub-skill>/SKILL.md # 子技能（单一职责）
+├── skills/
+│   ├── geo-opt-input/SKILL.md  # 几何优化输入生成（单一职责）
+│   ├── sp-energy-input/SKILL.md # 单点能输入生成（单一职责）
+    │   ├── freq-input/SKILL.md     # 频率计算输入生成（单一职责）
+    │   ├── output-parse/SKILL.md   # 输出文件解析（单一职责）
+    │   ├── error-diagnosis/SKILL.md # 异常诊断（单一职责）
+    │   └── basis-reference/SKILL.md # 基组选择参考（ORCA/Gaussian 专属）
 ├── shared/
 │   ├── templates/              # 输入模板
 │   ├── references/             # 快速参考文档

@@ -1,0 +1,17 @@
+# TDDFT calculation of <MOLECULE_NAME> (charge=<CHARGE>, mult=<MULTIPLICITY>)
+# Anion/cation -- diffuse functions and fine grid
+# ORCA 5+ input file -- generated for academic use
+# Recommended basis: def2-TZVPD (diffuse functions essential)
+
+! <FUNCTIONAL> D3BJ <BASIS> RIJCOSX DefGrid3 TightSCF
+
+%maxcore <MEMORY_MB>
+
+%tddft
+  NRoots <NROOTS>
+  TDA 0
+end
+
+* xyz <CHARGE> <MULTIPLICITY>
+<COORDINATES>
+*

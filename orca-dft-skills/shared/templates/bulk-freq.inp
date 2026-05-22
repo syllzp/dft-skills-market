@@ -1,0 +1,11 @@
+# Fast harmonic frequency analysis of <MOLECULE_NAME> at <FUNCTIONAL>-D3(BJ)/<BASIS> level
+# Screening-level frequency calculation
+# ORCA 5+ input file -- generated for academic use
+
+! <FUNCTIONAL> D3BJ <BASIS> Freq RIJ DefGrid2 TightSCF
+
+%maxcore <MEMORY_MB>
+
+* xyz <CHARGE> <MULTIPLICITY>
+<COORDINATES>
+*

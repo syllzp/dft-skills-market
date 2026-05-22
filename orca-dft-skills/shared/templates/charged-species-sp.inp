@@ -1,0 +1,17 @@
+# Single-point energy of <MOLECULE_NAME> (charge=<CHARGE>, mult=<MULTIPLICITY>)
+# Anion/cation -- diffuse functions and fine grid included
+# ORCA 5+ input file -- generated for academic use
+
+! <FUNCTIONAL> D3BJ <BASIS> RIJCOSX DefGrid3 TightSCF
+
+%maxcore <MEMORY_MB>
+
+%output
+  Print[ P_Basis ] 1
+  Print[ P_Mulliken ] 1
+  Print[ P_Loewdin ] 1
+end
+
+* xyz <CHARGE> <MULTIPLICITY>
+<COORDINATES>
+*

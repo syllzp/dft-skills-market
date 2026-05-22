@@ -1,0 +1,11 @@
+# Single-point energy of <MOLECULE_NAME> at <FUNCTIONAL>-D3(BJ)/<BASIS> level
+# Fast screening template (follow with higher-level refinement)
+# ORCA 5+ input file -- generated for academic use
+
+! <FUNCTIONAL> D3BJ <BASIS> RIJ DefGrid2 TightSCF
+
+%maxcore <MEMORY_MB>
+
+* xyz <CHARGE> <MULTIPLICITY>
+<COORDINATES>
+*

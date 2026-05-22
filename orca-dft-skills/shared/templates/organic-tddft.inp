@@ -1,0 +1,16 @@
+# TDDFT calculation of <MOLECULE_NAME> at <FUNCTIONAL>-D3(BJ)/<BASIS> level
+# Number of roots: <NROOTS>
+# ORCA 5+ input file -- generated for academic use
+
+! <FUNCTIONAL> D3BJ <BASIS> RIJCOSX DefGrid2 TightSCF
+
+%maxcore <MEMORY_MB>
+
+%tddft
+  NRoots <NROOTS>
+  TDA 0
+end
+
+* xyz <CHARGE> <MULTIPLICITY>
+<COORDINATES>
+*

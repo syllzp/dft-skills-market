@@ -1,0 +1,17 @@
+# Single-point energy of <MOLECULE_NAME> at <FUNCTIONAL>-D3(BJ)/<BASIS> level
+# ORCA 5+ input file -- generated for academic use
+# Neutral, closed-shell organic molecule
+
+! <FUNCTIONAL> D3BJ <BASIS> RIJCOSX DefGrid2 TightSCF
+
+%maxcore <MEMORY_MB>
+
+%output
+  Print[ P_Basis ] 1
+  Print[ P_Mulliken ] 1
+  Print[ P_Loewdin ] 1
+end
+
+* xyz <CHARGE> <MULTIPLICITY>
+<COORDINATES>
+*
